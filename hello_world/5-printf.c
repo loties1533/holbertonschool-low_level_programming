@@ -4,7 +4,7 @@
  *
  * affiche la phrase dans le printf
  *
- * return: 0 programme terminer sans probleme
+ * Return: 0 programme terminer sans probleme
  */
 int main(void)
 {
