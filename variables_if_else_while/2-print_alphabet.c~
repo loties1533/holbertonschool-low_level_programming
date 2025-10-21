@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/**
+ * en main ,  affiche l'alphabet en minuscules suivi d'un retour à la ligne
+ *
+ * Return: 0 si le programme s'exécute correctement
+ */
+int main(void)
+{
+	char letter;
+
+	/* boucle pour parcourir toutes les lettres de 'a' a 'z' */
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n'); /* retour à la ligne  */
+	return (0);
+}
