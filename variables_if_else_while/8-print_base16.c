@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+ * main- affiche tous les nombres de base 16
+ *
+ * Return: 0 si le programme s'exécute correctement
+ */
+int main(void)
+{
+	int chiffre;
+	char lettre;
+
+	/* afficher les chiffres 0 à 9 (++ avance de un par boucle) */
+	for (chiffre = 0; chiffre < 10; chiffre++)
+		putchar(chiffre + '0');
+
+	/* afficher les lettres a à f */
+	for (lettre = 'a'; lettre <= 'f'; lettre++)
+		putchar(lettre);
+
+	putchar('\n');
+
+	return (0);
+}
