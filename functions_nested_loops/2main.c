@@ -1,0 +1,12 @@
+#include "main.h"
+
+/**                                                                                                                    
+ * main - Vérifie le code de la fonction                                                                
+ *                                                                                                                     
+ * Return: Toujours 0.                                                                                                 
+ */
+int main(void)
+{
+    print_alphabet_x10();
+    return (0);
+}
