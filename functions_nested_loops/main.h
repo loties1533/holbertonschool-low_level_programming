@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+int add(int, int);
 void jack_bauer(void);
 int print_last_digit(int);
 int _putchar(char c);
