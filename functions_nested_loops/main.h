@@ -7,11 +7,11 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
-
+int _abs(int);
 int print_sign(int n);
 int _isalpha(int c);
 int _putchar(char c);
 int _islower(int c );
-void print_alphabet_x10(void);
+
 
 #endif /* MAIN_H */
