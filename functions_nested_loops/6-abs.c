@@ -1,16 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * main - une fonction qui calcule la valeur absolue d'un entier.
-
- *        
+ * _abs - retourne la valeur absolue d'un entier
+ * @n: entier à tester
  *
- * Return: toujours 0 (succès)
+ * Return: valeur absolue de n
  */
-int _abs ( int n)
+int _abs(int n)
 {
-        if (n < 0)
-          return (-n);
-        return (n);
+	if (n < 0)
+		return (-n);
+	else
+		return (n);
 }
