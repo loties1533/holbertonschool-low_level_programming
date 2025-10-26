@@ -11,7 +11,7 @@ int add(int, int);
 void jack_bauer(void);
 int print_last_digit(int);
 int _putchar(char c);
-
+void print_to_98(int n);
 
 
 #endif /* MAIN_H */
