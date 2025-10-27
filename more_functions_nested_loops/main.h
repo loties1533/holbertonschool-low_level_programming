@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+int _isdigit(int c);
 int _isupper(int c);
 
 #endif /* MAIN_H */
