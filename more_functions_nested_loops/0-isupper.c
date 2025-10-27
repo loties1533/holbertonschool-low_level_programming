@@ -8,8 +8,8 @@
  */
 int _isupper(int car)
 {
-    if (car >= 'A' && car <= 'Z')
-        return (1);
-    else
-        return (0);
+	if (car >= 'A' && car <= 'Z')
+		return (1);
+	else
+		return (0);
 }
