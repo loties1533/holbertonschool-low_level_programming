@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
- * main - Affiche tous les chiffres de 0 à 9
+ * print_numbers - affiche les chiffres de 0 à 9
  *
- * Return: Toujours 0 (Succès)
- *
+ * Return: rien
  */
- void print_numbers(void)
+void print_numbers(void)
 {
-    int nb;
-    for (nb = 48; nb < 58; nb++)
-    {
-        _putchar(nb);
-    }
-    _putchar('\n');
+	int nb;
+
+	for (nb = '0'; nb <= '9'; nb++)
+		_putchar(nb);
+	_putchar('\n');
 }
