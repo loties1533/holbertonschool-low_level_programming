@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * puts2 - affiche un caractère sur deux d'une chaîne
