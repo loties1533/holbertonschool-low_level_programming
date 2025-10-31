@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+void puts_half(char *str);
 void puts2(char *str);
 void _puts(char *str);
 int _strlen(char *s);
