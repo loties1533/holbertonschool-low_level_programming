@@ -2,11 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strcpy - copie la chaîne pointée par src dans dest
- * @dest: buffer de destination
- * @src: chaîne source à copier
+ * main - check the code
  *
- * Return: pointeur vers dest
+ * Return: Always 0.
  */
 int main(void)
 {

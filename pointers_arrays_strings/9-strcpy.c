@@ -1,22 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_array - affiche n éléments d'un tableau d'entiers
- * @a: tableau d'entiers
- * @n: nombre d'éléments à afficher
+ * _strcpy - copie la chaîne pointée par src dans dest
+ * @dest: buffer de destination
+ * @src: chaîne source à copier
  *
- * Return: void
+ * Return: pointeur vers dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
-    int i = 0;
-    while (src[i] != '\0')
+	int i = 0;
+
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
-		  i++;
+		i++;
 	}
-   dest [i]= '\0';
 
-   return dest;
+	dest[i] = '\0';
+
+	return (dest);
 }
