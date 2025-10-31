@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+void print_array(int *a, int n);
 void puts_half(char *str);
 void puts2(char *str);
 void _puts(char *str);
@@ -16,4 +17,5 @@ void reset_to_98(int *n);
 int _putchar(char c);
 void print_rev(char *s);
 void rev_string(char *s);
+
 #endif /* MAIN_H */
