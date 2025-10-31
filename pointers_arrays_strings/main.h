@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+char *_strncat(char *dest, char *src, int n);
 char *_strcat(char *dest, char *src);
 int _atoi(char *s);
 char *_strcpy(char *dest, char *src);
