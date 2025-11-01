@@ -3,7 +3,7 @@
 /**
  * string_toupper - convertit toutes les lettres minuscules d'une chaîne
  *                  en majuscules
- * @cstr: chaîne à modifier
+ * @str: chaîne à modifier
  *
  * Return: pointeur vers la chaîne modifiée
  */
