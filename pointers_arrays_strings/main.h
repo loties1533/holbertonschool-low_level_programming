@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+int _strcmp(char *s1, char *s2);
 char *string_toupper(char *);
 void reverse_array(int *a, int n);
 char *_strncpy(char *dest, char *src, int n);
