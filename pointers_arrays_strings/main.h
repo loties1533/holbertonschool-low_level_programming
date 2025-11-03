@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+char *_memset(char *s, char b, unsigned int n);
 int _strcmp(char *s1, char *s2);
 char *string_toupper(char *);
 void reverse_array(int *a, int n);
