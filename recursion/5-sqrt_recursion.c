@@ -7,13 +7,6 @@
  *
  * Return: La racine carrée de n si elle existe, sinon -1
  */
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-	return (test_racine(n, 1));
-}
-
 int test_racine(int n, int test)
 {
 	if (test * test == n)
@@ -22,3 +15,11 @@ int test_racine(int n, int test)
 		return (-1);
 	return (test_racine(n, test + 1));
 }
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	return (test_racine(n, 1));
+}
+
+
