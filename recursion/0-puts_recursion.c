@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _puts_recursion - affiche une chaîne de caractères suivie d'un retour à la ligne
+ * _puts_recursion - fonction qui affiche une chaine de char
  * @s: la chaîne à afficher
  */
 void _puts_recursion(char *s)
 {
-    if (*s == '\0')
-    {
-        _putchar('\n');
-        return;
-    }
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
 
-    _putchar(*s);
-    _puts_recursion(s + 1);
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
