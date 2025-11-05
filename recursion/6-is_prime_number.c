@@ -6,21 +6,17 @@
  *
  * Return: 1 si premier, sinon 0
  */
-
 int test_diviseur(int n, int div)
 {
-	if (n% div == 0)
+	if (n % div == 0)
 		return (0);
 	if (div * div > n)
 		return (1);
 	return (test_diviseur(n, div + 1));
 }
-
-
- int is_prime_number(int n)
+int is_prime_number(int n)
 {
-    if (n <= 1)
-    return (0);
-
-    return(test_diviseur(n, 2));
+	if (n <= 1)
+		return (0);
+	return (test_diviseur(n, 2));
 }
