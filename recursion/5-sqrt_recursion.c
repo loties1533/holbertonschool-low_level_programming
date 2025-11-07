@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - Fonction publique qui retourne la racine carrée naturelle
- *                  d'un nombre
- * @n: Le nombre dont on cherche la racine
+ * test_racine - vérifie récursivement la racine carrée d'un nombre
+ * @n: nombre dont on cherche la racine
+ * @test: valeur courante à tester
  *
- * Return: La racine carrée de n si elle existe, sinon -1
+ * Return: test si test*test == n, sinon -1 si aucune racine entière
  */
 int test_racine(int n, int test)
 {
@@ -15,11 +15,16 @@ int test_racine(int n, int test)
 		return (-1);
 	return (test_racine(n, test + 1));
 }
+
+/**
+ * _sqrt_recursion - retourne la racine carrée naturelle d'un nombre
+ * @n: nombre dont on cherche la racine
+ *
+ * Return: racine carrée de n si elle existe, sinon -1
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
 	return (test_racine(n, 1));
 }
-
-
