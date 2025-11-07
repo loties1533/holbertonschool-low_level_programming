@@ -7,6 +7,7 @@
  * Ce fichier d'en-tête déclare toutes les fonctions utilisées
  * 
  */
+void print_diagsums(int *a, int size);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_memset(char *s, char b, unsigned int n);
 int _strcmp(char *s1, char *s2);
