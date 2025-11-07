@@ -2,11 +2,9 @@
 #include <stdlib.h>
 
 /**
- * verifie_chiffres - vérifie si une chaîne ne contient que des chiffres
  * main - additionne les nombres positifs passés en arguments
  * @argc: nombre d'arguments
  * @argv: tableau de chaînes représentant les arguments
- * @chaine: chaîne à vérifier
  *
  * Return: 0 si succès, 1 si un argument est invalide
  */
