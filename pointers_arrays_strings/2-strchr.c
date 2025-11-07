@@ -1,24 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * _strchr - trouve un caractère dans une chaîne
- * @s: chaîne source
- * @c: caractère à trouver
+ * print_diagsums - affiche la somme des deux diagonales d'une matrice carrée
+ * @a: pointeur vers la première case de la matrice (casté en int *)
+ * @size: taille de la matrice (size x size)
  *
- * Return: pointeur vers la 1ère occurrence de c, ou 0 si pas trouvé
+ * Description: calcule la diagonale principale (haut-gauche → bas-droite)
+ * et la diagonale secondaire (haut-droite → bas-gauche)
  */
-char *_strchr(char *s, char c)
+void print_diagsums(int *a, int size)
 {
-    while (*s)
-    { 
-        if (*s == c)
-            return (s);
-        s++;
-    }
+	int i;
+	int somme_diag1 = 0;
+	int somme_diag2 = 0;
 
-    if (c == '\0')
-        return (s);
+	for (i = 0; i < size; i++)
+		somme_diag1 += *(a + i * size + i);
 
-    return (0);
+	for (i = 0; i < size; i++)
+		somme_diag2 += *(a + i * size + (size - 1 - i));
 
+	printf("%d, %d\n", somme_diag1, somme_diag2);
 }
