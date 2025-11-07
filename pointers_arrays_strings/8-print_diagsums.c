@@ -15,12 +15,12 @@ void print_diagsums(int *a, int size)
 
 	int somme_diag2 = 0;
 
-	
-	for  (i = 0; i < size; i++)
+
+	for (i = 0; i < size; i++)
 		somme_diag1 += *(a + i * size + i);
 
-	 for (i = 0; i < size; i++)
-		    somme_diag2 += *(a + i * size + (size - 1 - i));
+	for (i = 0; i < size; i++)
+		somme_diag2 += *(a + i * size + (size - 1 - i));
 
 	printf("%d, %d\n", somme_diag1, somme_diag2);
 }
