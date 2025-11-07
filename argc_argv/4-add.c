@@ -22,21 +22,13 @@ int verifie_chiffres(char *chaine)
 	}
 	return (0);
 }
-
 /**
- * verifie_chiffres - vérifie si une chaîne contient uniquement des chiffres
- * @chaine: chaîne à tester
- *
- * Return: 0 si tous les caractères sont des chiffres, 1 sinon
- */
- /**
  * main - additionne les nombres positifs passés en arguments
  * @argc: nombre d'arguments
  * @argv: tableau de chaînes représentant les arguments
  *
  * Return: 0 si succès, 1 si un argument est invalide
  */
-
 
 int main(int argc, char *argv[])
 {
