@@ -7,26 +7,26 @@
  *
  * Return: pointeur vers la nouvelle chaîne, ou NULL si erreur
  */
-char *_strdup(char *source)
+char *_strdup(char *str)
 {
     char *copy;
-    int long = 0;
+    int lon = 0;
     int index;
 
-    if (source == NULL)
+    if (str == NULL)
         return NULL;
 
-    while (source[long] != '\0')
-        long++;
+    while (str[lon] != '\0')
+        lon++;
 
 
-    copy = malloc(long + 1);
+    copy = malloc(lon + 1);
     if (copy == NULL)
         return NULL;
 
 
-    for (index = 0; index <= long; index++)
-        copy[index] = source[index];
+    for (index = 0; index <= lon; index++)
+        copy[index] = str[index];
 
     return copy;
 }
