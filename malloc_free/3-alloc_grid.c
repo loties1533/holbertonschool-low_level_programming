@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height)
     if (grille == NULL)
         return NULL;
 
-/
+
     for (i = 0; i < height; i++)
     {
         grille[i] = malloc(sizeof(int) * width);
@@ -43,3 +43,4 @@ int **alloc_grid(int width, int height)
 
     return grille;
 }
+
