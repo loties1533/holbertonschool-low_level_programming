@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct dog - représente un chien
+ * struct dog - représente le chien
  * @name: nom du chien
  * @age: âge du chien
  * @owner: nom du propriétaire
@@ -16,14 +16,17 @@ struct dog
 	char *owner;
 };
 
+/*  alias dog_t pour struct dog */
+typedef struct dog dog_t;
+
 /**
  * init_dog - initialise une structure dog
- * @d: pointeur vers la structure dog
+ * @d: pointeur vers  structure dog
  * @name: nom du chien
  * @age: âge du chien
  * @owner: propriétaire du chien
  *
- * Description: Initialise les membres de la structure dog
+ * Description: Initialise se qui se trouve dans la structure dog
  * avec les valeurs passées en paramètre.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner);
