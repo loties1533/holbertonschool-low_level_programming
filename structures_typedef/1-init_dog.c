@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * init_dog - initialise une variable  type struct dog
+ * init_dog - initialise une variable de type struct dog
  * @d: pointeur vers la structure à initialiser
- * @name: nom 
- * @age: âge 
+ * @name: nom
+ * @age: âge
  * @owner: propriétaire du chien
  *
  * Description: Cette fonction initialise les membres
@@ -13,10 +13,10 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-    if (d == NULL)
-        return;
+	if (d == NULL)
+		return;
 
-    d->name = name;
-    d->age = age;
-    d->owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
