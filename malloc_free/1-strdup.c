@@ -9,24 +9,22 @@
  */
 char *_strdup(char *str)
 {
-    char *copy;
-    int lon = 0;
-    int index;
+	char *copy;
+	int lon = 0;
+	int index;
 
-    if (str == NULL)
-        return NULL;
+	if (str == NULL)
+		return (NULL);
 
-    while (str[lon] != '\0')
-        lon++;
+	while (str[lon] != '\0')
+		lon++;
 
+	copy = malloc(lon + 1);
+	if (copy == NULL)
+		return (NULL);
 
-    copy = malloc(lon + 1);
-    if (copy == NULL)
-        return NULL;
+	for (index = 0; index <= lon; index++)
+		copy[index] = str[index];
 
-
-    for (index = 0; index <= lon; index++)
-        copy[index] = str[index];
-
-    return copy;
+	return (copy);
 }
