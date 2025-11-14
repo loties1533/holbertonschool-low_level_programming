@@ -3,7 +3,7 @@
 
 /**
  * _strdup - copie une chaîne de caractères dans une nouvelle mémoire
- * @source: la chaîne à copier
+ * @str: la chaîne à copier
  *
  * Return: pointeur vers la nouvelle chaîne, ou NULL si erreur
  */
