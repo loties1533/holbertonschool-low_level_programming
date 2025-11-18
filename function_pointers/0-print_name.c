@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_name - affiche un nom avec un pointeur sur fonction
+ * 0-print_name.c - affiche un nom avec un pointeur sur fonction
  * @name: chaîne de caractères pour le nom
  * @f: pointeur vers une fonction qui prend un char * et retourne void
  */
