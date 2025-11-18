@@ -6,10 +6,16 @@
 /**
  * function_pointers.h - Fichier d'en-tête pour les pointeurs de fonctions
  *
- * Ce fichier contient les prototypes des fonctions 
+ *  contient les prototypes des fonctions 
  */
-void array_iterator(int *array, size_t size, void (*action)(int));
-void print_name(char *name, void (*f)(char *));
 
+/* Recherche un entier dans un tableau */
+int int_index(int *array, int size, int (*cmp)(int));
+
+/* Applique une fonction à chaque élément d'un tableau */
+void array_iterator(int *array, size_t size, void (*action)(int));
+
+/* Affiche un nom en utilisant une fonction passée en paramètre */
+void print_name(char *name, void (*f)(char *));
 
 #endif
