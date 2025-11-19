@@ -6,7 +6,7 @@
  * 
  * 
  */
- 
+ /* Prototype d'une fonction qui calcule la somme de tous ses arguments */
 int sum_them_all(const unsigned int n, ...);
 
 #endif /* VARIADIC_FUNCTIONS_H */
