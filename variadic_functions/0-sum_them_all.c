@@ -21,9 +21,10 @@ int sum_them_all(const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		int valeur = va_arg(lst, int);
-		somme += valeur;
+		       somme += valeur;
 	}
 	va_end(lst);
 
 	return (somme);
 }
+
