@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
     for ( i = 0; i < n; i++)
     {
         chaine = va_arg(args, char *);
-        if (chaine ==NULL)
+        if (chaine == NULL)
             printf("nil");
         else
             printf("%s", chaine);
