@@ -3,17 +3,21 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-    va_list ap;
+    va_list lst;
     unsigned int i;
     int somme = 0;
 
-    va_start(ap,n);
+    if (n == 0)
+        return 0;
+
+        
+    va_start(lst,n);
     for(i = 0; i < n; i ++)
     {
-        int valeur = va_arg(ap, int);
+        int valeur = va_arg(lst, int);
         somme += valeur;
     }
-    va_end(ap);
+    va_end(lst);
 
     return somme;
 }
