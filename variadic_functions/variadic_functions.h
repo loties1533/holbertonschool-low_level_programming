@@ -8,6 +8,8 @@
  * de calculer la somme d'un nombre variable d'entiers.
  */
 
+#include <stdarg.h>
+
 /* Prototype d'une fonction qui calcule la somme de tous ses arguments */
 int sum_them_all(const unsigned int n, ...);
 
