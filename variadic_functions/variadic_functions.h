@@ -9,8 +9,20 @@
 
 #include <stdarg.h>
 
+/**
+ * print_all - afficheles arguments selon leur type
+ * @format: chaîne représentant les types d'arguments
+ * ...: arguments variadiques à afficher
+ */
 void print_all(const char * const format, ...);
 
+/**
+ * print_strings - affiche plusieurs chaînes
+ * @separator: " , " afficher entre chaque argument
+ * @n: nombre d'arguments
+ * ...: arguments variadiquestype char *
+ * Si une string  NULL, affiche (nil)
+ */
 void print_strings(const char *separator, const unsigned int n, ...);
 
 /* Affiche les nombres passés en arguments, séparés par separator */

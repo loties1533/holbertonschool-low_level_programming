@@ -2,21 +2,35 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+ * affiche_char - affiche un char
+ * @args: liste d'arguments variadiques
+ */
 static void affiche_char(va_list args)
 {
     printf ("%c" , va_arg(args, int));
 }
-
+/**
+ * affiche_int - affiche un entier
+ * @args: liste d'arguments variadiques
+ */
 static void affiche_int(va_list args)
 {
     printf("%d", va_arg(args, int));
 }
-
+/**
+ * affiche_float - affiche un float (double)
+ * @args: liste d'arguments variadiques
+ */
 static void affiche_float(va_list args)
 {
     printf("%f", va_arg(args , double));
 }
-
+/**
+ * affiche_string - affiche une string
+ * @args: liste d'arguments variadiques
+ * Si string = NULL, affiche "(nil)"
+ */
 static void affiche_string(va_list args)
 {
     char *s = va_arg(args, char *);
@@ -26,14 +40,22 @@ static void affiche_string(va_list args)
     
     printf("%s", s);
 }
-
+/**
+ * typedef struct affiche_type - structure : fonction pour chaque type
+ * @type_char: caractère représentant le type 
+ * @fonction: pointeur vers fonction d'affichage 
+ */
 typedef struct affiche_type
 {
 
     char type_char;
     void (*fonction)(va_list);
 }affiche_t;
-
+/**
+ * print_all - affiche les arguments selon leur type
+ * @format: chaîne représentant les types d'arguments (c,i,f,s)
+ * ...: les arguments variadiques à afficher
+ */
 void print_all(const char * const format, ...)
 {
     va_list args;
