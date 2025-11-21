@@ -19,10 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(lst, n);
 	for (i = 0; i < n; i++)
-	{
-		int valeur = va_arg(lst, int);
-		       somme += valeur;
-	}
+		somme += va_arg(lst, int);
 	va_end(lst);
 
 	return (somme);
