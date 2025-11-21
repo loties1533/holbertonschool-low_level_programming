@@ -1,6 +1,7 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
+
 /**
  * variadic_functions.h - Contient le prototype des fonctions variadiques
  *
@@ -10,9 +11,8 @@
 #include <stdarg.h>
 
 /**
- * print_all - afficheles arguments selon leur type
- * @format: chaîne représentant les types d'arguments
- * ...: arguments variadiques à afficher
+ * print_all - affiche les arguments selon leur type
+ * @format: chaîne représentant les types d'arguments (c,i,f,s)
  */
 void print_all(const char * const format, ...);
 
