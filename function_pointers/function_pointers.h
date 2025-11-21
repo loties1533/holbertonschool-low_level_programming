@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
@@ -18,4 +16,4 @@ void array_iterator(int *array, size_t size, void (*action)(int));
 /* Affiche un nom en utilisant une fonction passée en paramètre */
 void print_name(char *name, void (*f)(char *));
 
-#endif
+#endif /* FUNCTION_POINTERS_H */
