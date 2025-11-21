@@ -9,6 +9,8 @@
 
 #include <stdarg.h>
 
+void print_all(const char * const format, ...);
+
 void print_strings(const char *separator, const unsigned int n, ...);
 
 /* Affiche les nombres passés en arguments, séparés par separator */
