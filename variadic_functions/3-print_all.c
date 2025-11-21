@@ -45,6 +45,17 @@ static void affiche_string(va_list args)
 }
 
 /**
+ * struct affiche_type - associe un type à une fonction
+ * @type_char: caractère représentant le type
+ * @fonction: pointeur vers fonction d'affichage
+ */
+typedef struct affichage_type
+{
+    char type_char;
+    void (*fonction)(va_list);
+} affiche_t;
+
+/**
  * print_all - affiche les arguments selon leur type
  * @format: chaîne représentant les types d'arguments (c,i,f,s)
  * ...: les arguments variadiques à afficher
