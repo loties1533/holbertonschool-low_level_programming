@@ -1,6 +1,8 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
+#include <stddef.h>
+
 /**
  * function_pointers.h - Fichier d'en-tête pour les pointeurs de fonctions
  *
